@@ -21,7 +21,7 @@ Vraci JSON:
 }      
 ```
 
-**Popis:**
+**Popis:**  
 ok - bude nastaveno, pokud proběhne všechno v pořádku  
 config - konfigurace pro mistnost  
 data - lekce  
