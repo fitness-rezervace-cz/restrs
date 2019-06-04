@@ -4,11 +4,11 @@
 **Struktura**: https://*****.inrs.cz/rs/{token}/{idmistnost}/{datum-od}/{datum-do}
 
 token - unikátní vygenerovaný token  
-idmistnost - id mistnosti, z které výčítáte data  
+idmistnost - ID místnosti (kalendáře), z které načítáte data  
 datum-od - datum - začátek stahování lekcí. formát: YYYY-MM-DD  
 datum-do - datum - konec stahování lekcí. formát: YYYY-MM-DD  
 
-Vraci JSON:
+Vrací JSON:
 ```json
 {
   "ok": "1",
@@ -23,7 +23,7 @@ Vraci JSON:
 
 **Popis:**  
 ok - bude nastaveno, pokud proběhne všechno v pořádku  
-config - konfigurace pro mistnost  
+config - konfigurace pro místnost  
 data - lekce  
 
 ##Config
@@ -82,19 +82,19 @@ HRS_COUNT
 
 HRS_NOT_PRINT 
 - hodiny v kalendáři, které se nebudou vypisovat  
-- hodnota: hodiny oddělené čárku. např.: 12,13  
+- hodnota: hodiny oddělené čárkou. např.: 12,13  
 
 KALENDAR_START_DT 
-- případné datum, kdy by měl kalendář začínat. Pokud bude nastaveno, tak klient očekává, že kalendář začne v tomto datumu, pokud bude datum větší jako aktuální den.   
+- případné datum, kdy by měl kalendář začínat. Pokud bude nastaveno, tak klient očekává, že kalendář začne v tomto datu, pokud bude datum větší jako aktuální den.   
 - hodnota: datum ve formatu dd.mm.YYYY.   
 
 START_DEN_V_TYDNU   
 - kterým dnem má kalendář začínat.   
-- hodnota: 1 - Po, 2 - Ut, 3 - St, 4 - Ct, 5 - Pa, 6 - So, 7 - Ne  
+- hodnota: 1 - Po, 2 - Út, 3 - St, 4 - Čt, 5 - Pá, 6 - So, 7 - Ne  
 
 KALENDAR_START_DT_TRVALY  
 - trvale nastavený počáteční datum kalendáře  
-- hodnota: datum ve formatu dd.mm.YYYY.   
+- hodnota: datum ve formátu dd.mm.YYYY.   
 
 ##Lekce
 ```json
@@ -109,14 +109,14 @@ KALENDAR_START_DT_TRVALY
       "datum": "2019-06-04",
       "od_cas": "08:00",
       "do_cas": "08:30",
-      "nazev_lekce": "jezdime po kopcich",
+      "nazev_lekce": "Jezdíme po kopcích",
       "pocet_volnych_mist": 5,
       "cena": "100",
       "cena1": null,
       "cena2": null,
       "cena3": null,
       "cena4": null,
-      "popis": "<p>Budme jezdit nahoru a dolu dokut nebudemem mit dost</p>",
+      "popis": "<p>Budeme jezdit nahoru a dolu dokud nebudeme mít dost</p>",
       "kurz": 0,
       "obtiznost": 3,
       "cena_kurzu": null,
@@ -194,7 +194,7 @@ KALENDAR_START_DT_TRVALY
 - hodnota: string  
 
 "kurz":   
-- jeslti se jedná o kurz  
+- jestli se jedná o kurz  
 - hodnota: bool  
 
 "obtiznost":   
@@ -202,7 +202,7 @@ KALENDAR_START_DT_TRVALY
 - hodnota: 0-5  
 
 "cena_kurzu":   
-- základni cena celého kurzu  
+- základní cena celého kurzu  
 - hodnota: float  
 
 "cena_kurzu1":  
@@ -234,7 +234,7 @@ KALENDAR_START_DT_TRVALY
 - hodnota:  6ti místný hexa kód barvy  
 
 "barva_aktivity_hlavicka":   
-- barva klavičky pro aktivity  
+- barva hlavičky pro aktivity  
 - hodnota:  6ti místný hexa kód barvy  
 
 "barva_aktivity_text":   
@@ -249,9 +249,8 @@ KALENDAR_START_DT_TRVALY
 - příjmení instruktora  
 - hodnota: string  
 
-
 "pohlavi":   
-- pohlavý instruktora  
+- pohlaví instruktora  
 - hodnota: Z | M  
 
 "firstname2":   
@@ -259,11 +258,11 @@ KALENDAR_START_DT_TRVALY
 - hodnota: string  
 
 "lastname2":   
-- přijmení druhého instruktora  
+- příjmení druhého instruktora  
 - hodnota: string  
 
 "pohlavi2":   
-- pohlavý druhého instruktora  
+- pohlaví druhého instruktora  
 - hodnota: Z | M  
 
 "pocet_rezervaci":   
