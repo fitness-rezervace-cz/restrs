@@ -41,6 +41,7 @@ try{
 	<div>barva lekce: <?php echo (!empty($lekce['barva_lekce']) ? $lekce['barva_lekce'] : 'Nenastavena' )?> - muze byt nastavena >> prebije barvu aktivity</div>
 	<div>Popis: <?=$lekce['popis']?></div>
 	<div>odkaz na lekci: <a href="<?=Rs::WWW?>akce/zobrazit_akci/<?=$lekce['idakce']?>">link</a></div>
+	<div>Obrazek aktivity: <img src="/<?=AktivitaImg::getImg($lekce)?>" width="150px" ></div>
 </div>
 			<?php
 		}
