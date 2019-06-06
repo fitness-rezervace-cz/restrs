@@ -2,7 +2,7 @@
 
 ## Nastaveni  
 
-Před zpuštěním je potřeba nastavit soubor: Rs.php, hodnoty:  
+Před spuštěním je potřeba nastavit soubor: Rs.php, hodnoty:  
 
 const  NAME = '****ZAZADAT*****';  
 
