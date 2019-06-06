@@ -4,9 +4,9 @@
 
 Před spuštěním je potřeba nastavit soubor: Rs.php, hodnoty:  
 
-const  NAME = '****ZAZADAT*****';  
+const  NAME = '';  
 
-const TOKEN = '****ZAZADAT*****';  
+const TOKEN = '';  
 
 potřebné nastavené hodnoty obdržíte od administrátoru Rezervačního systému  
 
