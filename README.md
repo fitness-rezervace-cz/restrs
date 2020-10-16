@@ -344,6 +344,7 @@ kde:
 "pohlavi": M/Z - pohlaví uživatele
 "kredit": Výše dobitého rkeditu uživatele
 
+
 *permanentky*
 idpermanentka2user": id permanentky
 "platnost_od": platnost permanentky
