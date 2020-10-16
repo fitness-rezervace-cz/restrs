@@ -334,45 +334,40 @@ Vrací JSON:
 
 kde
 
-test fda\
-test2 fdsa\
-test3 fdsa\
-
-idsys_member: id uživatele\
-username: uživatelské jméno\
-
-"firstname": křestní jméno
-"lastname": přijmení
-"email": email
-"phone": telefonní číslo
-"accesslevel": přistupový level. 1 - Admin, 2 - Obsluha, 3 - Uživatel, 4 - Obsluha, 5 - Účetní
-"blocked": Y/N - jestli je uživatel v RS blokován
-"pohlavi": M/Z - pohlaví uživatele
+"idsys_member": id uživatele\
+"username": uživatelské jméno\
+"firstname": křestní jméno\
+"lastname": přijmení\
+"email": email\
+"phone": telefonní číslo\
+"accesslevel": přistupový level. 1 - Admin, 2 - Obsluha, 3 - Uživatel, 4 - Obsluha, 5 - Účetní\
+"blocked": Y/N - jestli je uživatel v RS blokován\
+"pohlavi": M/Z - pohlaví uživatele\
 "kredit": Výše dobitého rkeditu uživatele
 
 
-*permanentky*
-idpermanentka2user": id permanentky
-"platnost_od": platnost permanentky
-"platnost_do": platnost permanentky
-"nazev": název permanentky
-"celkovy_pocet_rezervaci": celkový počet dostupných vstupů na permanentku
-"penalizace": počet penalizací na permanentku
-"zmrazeno": Y/N - jestli je permanentka zmrazena
-"zaplaceno": Y/N - jestli je permanentka zaplacena
-"automaticke_odecitani_karta": jestli je permanentka nastavena na automaticky odečet vstupu po pípnutí kartou do RS
-"pocet_rezervaci": počet již provedených rezervací na lekce
-"pocet_vstupu": počet registrovaných vstupu do fitcentra
+*permanentky*\
+idpermanentka2user": id permanentky\
+"platnost_od": platnost permanentky\
+"platnost_do": platnost permanentky\
+"nazev": název permanentky\
+"celkovy_pocet_rezervaci": celkový počet dostupných vstupů na permanentku\
+"penalizace": počet penalizací na permanentku\
+"zmrazeno": Y/N - jestli je permanentka zmrazena\
+"zaplaceno": Y/N - jestli je permanentka zaplacena\
+"automaticke_odecitani_karta": jestli je permanentka nastavena na automaticky odečet vstupu po pípnutí kartou do RS\
+"pocet_rezervaci": počet již provedených rezervací na lekce\
+"pocet_vstupu": počet registrovaných vstupu do fitcentra\
 "pocet_dostupnych_rezervaci": počet dostupných vstupu, které jsou ještě na permanentku dostupné
 
-*clenstvi*
-"idclenstvi2user": id clenstvi
-"idclenstvi": id použitého členství
-"nazev": název členství
-"platnost_od": platnost  
-"platnost_do": platnost 
-"pocet_rezervaci": po4et již proběhlích rezervací
-"pocet_vstupu": počet již proběhlích vstupů 
+*clenstvi*\
+"idclenstvi2user": id clenstvi\
+"idclenstvi": id použitého členství\
+"nazev": název členství\
+"platnost_od": platnost \ 
+"platnost_do": platnost \
+"pocet_rezervaci": po4et již proběhlích rezervací\
+"pocet_vstupu": počet již proběhlích vstupů \
 
 # Výpis dostupných permanentek
 
@@ -410,27 +405,30 @@ vrací JOSN:
   ]
 }
 ```
+
 kde:
-"idpermanekta": - id permanentky
-"nazev": nazev permanentky
-"volnych_vstupu_perioda": pocet vstupu za interval
-"perioda": Interval vstupu
-"platnost_dnu": počet dnů platnosti
-"celkovy_pocet_rezervaci": celkový počet dostupných rezervací
-"text_pocet_vstupu": text pro celkový počet vstupu
-"fond_na_lekci": omezení počtu rezervaci na permanentku na jednu lekci,
-"cena": základní cena permanentky
-"cena1": cena permanentky pro slevu číslo 1 (viz. RS Nastaveni - Slevy (student, senior,...)
-"cena2": cena permanentky pro slevu číslo 2 (viz. RS Nastaveni - Slevy (student, senior,...)
-"cena3": cena permanentky pro slevu číslo 3 (viz. RS Nastaveni - Slevy (student, senior,...)
-"cena4": cena permanentky pro slevu číslo 4 (viz. RS Nastaveni - Slevy (student, senior,...)
-"automaticky_po_prihlaseni": 0/1 - jestli bude permanentka p5id2lena automatickz po registraci
-"automaticky_po_prihlaseni_zaplaceno": 0/1 - jestli bude automaticky přidělená permanentka nastavena na zaplaceno 
-"platnost_od": jestli bude mít natvrdo nastavený datum od kdy bude permanentka platna
-"pocet_dostupnych": jestli je omezený počet prodaných permanentek 
+
+"idpermanekta": - id permanentky\
+"nazev": nazev permanentky\
+"volnych_vstupu_perioda": pocet vstupu za interval\
+"perioda": Interval vstupu\
+"platnost_dnu": počet dnů platnosti\
+"celkovy_pocet_rezervaci": celkový počet dostupných rezervací\
+"text_pocet_vstupu": text pro celkový počet vstupu\
+"fond_na_lekci": omezení počtu rezervaci na permanentku na jednu lekci,\
+"cena": základní cena permanentky\
+"cena1": cena permanentky pro slevu číslo 1 (viz. RS Nastaveni - Slevy (student, senior,...)\
+"cena2": cena permanentky pro slevu číslo 2 (viz. RS Nastaveni - Slevy (student, senior,...)\
+"cena3": cena permanentky pro slevu číslo 3 (viz. RS Nastaveni - Slevy (student, senior,...)\
+"cena4": cena permanentky pro slevu číslo 4 (viz. RS Nastaveni - Slevy (student, senior,...)\
+"automaticky_po_prihlaseni": 0/1 - jestli bude permanentka p5id2lena automatickz po registraci\
+"automaticky_po_prihlaseni_zaplaceno": 0/1 - jestli bude automaticky přidělená permanentka nastavena na zaplaceno \
+"platnost_od": jestli bude mít natvrdo nastavený datum od kdy bude permanentka platna\
+"pocet_dostupnych": jestli je omezený počet prodaných permanentek \
 "automaticke_odecitani_karta": jestli bude permanentka nastavena na autoamticke odečítání vstupu po pípnutí karty do RS
 
 *link pro presmerovaní na koupi permanentky v RS*
+
 https://URL_RS.inrs.cz/rs/neprihlaseny/permanentka/{idpermanekta}
 
 
@@ -463,19 +461,20 @@ vrací JOSN:
 }
 ```
 
-kde:
-"nazev": nazev členství
-"pocet_dnu_platnosti": počet dnů pro platnost členství
-"cena": základní cena členství
-"cena1": cena permanentky pro slevu číslo 1 (viz. RS Nastaveni - Slevy (student, senior,...)
-"cena2": cena permanentky pro slevu číslo 2 (viz. RS Nastaveni - Slevy (student, senior,...)
-"cena3": cena permanentky pro slevu číslo 3 (viz. RS Nastaveni - Slevy (student, senior,...)
-"cena4": cena permanentky pro slevu číslo 4 (viz. RS Nastaveni - Slevy (student, senior,...)
-"pocet_dostupnych": počet dostupných členství
-"pocet_video": případný počet videii, které bude zpřístupněno přes členství
+kde:\
+"nazev": nazev členství\
+"pocet_dnu_platnosti": počet dnů pro platnost členství\
+"cena": základní cena členství\
+"cena1": cena permanentky pro slevu číslo 1 (viz. RS Nastaveni - Slevy (student, senior,...)\
+"cena2": cena permanentky pro slevu číslo 2 (viz. RS Nastaveni - Slevy (student, senior,...)\
+"cena3": cena permanentky pro slevu číslo 3 (viz. RS Nastaveni - Slevy (student, senior,...)\
+"cena4": cena permanentky pro slevu číslo 4 (viz. RS Nastaveni - Slevy (student, senior,...)\
+"pocet_dostupnych": počet dostupných členství\
+"pocet_video": případný počet videii, které bude zpřístupněno přes členství\
 "cena_prodlouzeni_procenta": cena za prodloužení již zakoupeného členství
 
 *link pro presmerovaní na koupi permanentky v RS*
+
 https://URL_RS.inrs.cz/rs/neprihlaseny/clenstvi/{idclenstvi}
 
 
