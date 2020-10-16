@@ -334,6 +334,8 @@ Vrací JSON:
 
 kde
 
+*user*
+
 "idsys_member": id uživatele\
 "username": uživatelské jméno\
 "firstname": křestní jméno\
@@ -346,8 +348,9 @@ kde
 "kredit": Výše dobitého rkeditu uživatele
 
 
-*permanentky*\
-idpermanentka2user": id permanentky\
+*permanentky*
+
+"idpermanentka2user": id permanentky\
 "platnost_od": platnost permanentky\
 "platnost_do": platnost permanentky\
 "nazev": název permanentky\
@@ -360,7 +363,8 @@ idpermanentka2user": id permanentky\
 "pocet_vstupu": počet registrovaných vstupu do fitcentra\
 "pocet_dostupnych_rezervaci": počet dostupných vstupu, které jsou ještě na permanentku dostupné
 
-*clenstvi*\
+*clenstvi*
+
 "idclenstvi2user": id clenstvi\
 "idclenstvi": id použitého členství\
 "nazev": název členství\
@@ -461,7 +465,8 @@ vrací JOSN:
 }
 ```
 
-kde:\
+kde:
+
 "nazev": nazev členství\
 "pocet_dnu_platnosti": počet dnů pro platnost členství\
 "cena": základní cena členství\
