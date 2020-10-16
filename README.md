@@ -334,12 +334,12 @@ Vrací JSON:
 
 kde
 
-test fda
-test2 fdsa
-test3 fdsa
+test fda\
+test2 fdsa\
+test3 fdsa\
 
-idsys_member: id uživatele
-username: uživatelské jméno
+idsys_member: id uživatele\
+username: uživatelské jméno\
 
 "firstname": křestní jméno
 "lastname": přijmení
