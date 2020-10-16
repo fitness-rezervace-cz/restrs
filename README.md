@@ -282,6 +282,7 @@ token - unikátní vygenerovaný token
 barcode - carovy kod přiřaezný uživateli 
 
 Vrací JSON:
+```json
 {
   "ok": "1",
   "data": {
@@ -329,6 +330,7 @@ Vrací JSON:
     ]
   }
 }
+```
 kde: 
 *user*
 "idsys_member": id uživatele
@@ -373,6 +375,7 @@ idpermanentka2user": id permanentky
 token - unikátní vygenerovaný token  
 
 vrací JOSN:
+```json
 {
   "ok": "1",
   "data": [
@@ -399,7 +402,7 @@ vrací JOSN:
   .....      
   ]
 }
-
+```
 kde:
 "idpermanekta": - id permanentky
 "nazev": nazev permanentky
@@ -432,6 +435,7 @@ https://URL_RS.inrs.cz/rs/neprihlaseny/permanentka/{idpermanekta}
 token - unikátní vygenerovaný token  
 
 vrací JOSN:
+```json
 {
   "ok": "1",
   "data": [
@@ -450,6 +454,7 @@ vrací JOSN:
   .....      
   ]
 }
+```
 
 kde:
 "nazev": nazev členství
