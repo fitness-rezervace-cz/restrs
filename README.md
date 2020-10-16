@@ -332,7 +332,11 @@ Vrací JSON:
 }
 ```
 kde: 
-*user*
+
+test
+test2
+test33
+
 "idsys_member": id uživatele
 "username": uživatelské jméno
 "firstname": křestní jméno
