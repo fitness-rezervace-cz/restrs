@@ -433,7 +433,7 @@ kde:
 
 *link pro presmerovaní na koupi permanentky v RS*
 
-https://URL_RS.inrs.cz/rs/neprihlaseny/permanentka/{idpermanekta}
+https://URL_RS.inrs.cz/rs/odkaz/permanentka/{idpermanekta}
 
 
 # Výpis dostupných členství
@@ -480,7 +480,7 @@ kde:
 
 *link pro presmerovaní na koupi permanentky v RS*
 
-https://URL_RS.inrs.cz/rs/neprihlaseny/clenstvi/{idclenstvi}
+https://URL_RS.inrs.cz/rs/odkaz/clenstvi/{idclenstvi}
 
 
 
