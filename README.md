@@ -376,7 +376,7 @@ kde
 # Výpis dostupných permanentek
 
 
-**Struktura**: http://46.28.111.31:3000/permanentky/{token}
+**Struktura**: http://46.28.111.31:3000/permanentka/{token}
 
 token - unikátní vygenerovaný token  
 
