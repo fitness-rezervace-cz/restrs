@@ -1,4 +1,4 @@
-# Výpis lekcí
+# Výpis lekcí (GET)
 
 
 **Struktura**: http://46.28.111.31:3000/kalendar/{token}/{idmistnost}/{datum-od}/{datum-do}
@@ -273,7 +273,7 @@ KALENDAR_START_DT_TRVALY
 - počet existujících rezervací na náhradníka na lekci   
 - hodnota: integer  
 
-# Uživatel podle barcodu
+# Uživatel podle barcodu (GET)
 
 
 **Struktura**: http://46.28.111.31:3000/user/barcode/{token}/{barcode}
@@ -373,8 +373,126 @@ kde
 "pocet_rezervaci": po4et již proběhlích rezervací\
 "pocet_vstupu": počet již proběhlích vstupů \
 
-# Výpis dostupných permanentek
+# Uživatel podle ID (GET)
 
+**Struktura**: http://46.28.111.31:3000/user/barcode/{token}/{id}
+
+token - unikátní vygenerovaný token  
+id - id uzivatele
+
+Vrací JSON:
+```json
+{
+  "ok": "1",
+  "data": {
+    "user": [
+      {
+        "idsys_member": 41,
+        "username": "....",
+        "firstname": "....",
+        "lastname": "...",
+        "email": "...",
+        "phone": "...",
+        "accesslevel": ".",
+        "blocked": "N",
+        "pohlavi": "M",
+        "kredit": ...
+      }
+    ],
+    
+    ]
+  }
+}
+```
+
+kde
+
+*user*
+
+"idsys_member": id uživatele\
+"username": uživatelské jméno\
+"firstname": křestní jméno\
+"lastname": přijmení\
+"email": email\
+"phone": telefonní číslo\
+"accesslevel": přistupový level. 1 - Admin, 2 - Obsluha, 3 - Uživatel, 4 - Obsluha, 5 - Účetní\
+"blocked": Y/N - jestli je uživatel v RS blokován\
+"pohlavi": M/Z - pohlaví uživatele\
+"kredit": Výše dobitého rkeditu uživatele
+
+# Vytvořit nového uživatele (POST)
+
+**Struktura**: http://46.28.111.31:3000/user/{token}
+
+token - unikátní vygenerovaný token 
+
+**POST data (x-www-form-urlencode)**
+username - uzivatelske jmené uzivatele, max 100 znaku, povinna položka
+pass_word - heslo uzivatele, povinna položka
+firstname - jméno uživatele, max 100 znaku, povinna položka
+lastname - přijmení uživatele, max 100 znaku, povinna položka
+email - email uživatele, povinna položka
+pohlavy - pohlavy uzivatele, povolene znaky Z, M), Z = zena, M = Muz
+dt_narozeni - datum narození, format YYYY-MM-DD
+
+Vrací JSON:
+POkud probehne vse v poradku:
+```json
+{
+  "ok": "1",
+}
+```
+
+Pokud nastane chyba:
+```json
+{
+    "errors": [
+        {
+            "value": "",
+            "msg": "",
+            "param": "",
+            "location": ""
+        }
+    ]
+}
+```
+
+# Dobít kredit (POST)
+
+**Struktura**: http://46.28.111.31:3000/user/dobit_kredit/{token}
+
+token - unikátní vygenerovaný token 
+
+**POST data (x-www-form-urlencode)**
+kredit - vyse kreditu pro dobiti, pokud zadate zaporny kredit, uzivateli se kredit odecte. Povinna polozka
+idsys_member - id uzivatele, kteremu se dobiji kredit, povinna polozka
+dph - vzse dph, ktera se pouzije pro dobiti, pokud nejste platvi dph zadavejte 0 (nulu), povinna polozka
+
+
+Vrací JSON:
+POkud probehne vse v poradku:
+```json
+{
+  "ok": "1",
+}
+```
+
+Pokud nastane chyba:
+```json
+{
+    "errors": [
+        {
+            "value": "",
+            "msg": "",
+            "param": "",
+            "location": ""
+        }
+    ]
+}
+```
+
+
+# Výpis dostupných permanentek (GET)
 
 **Struktura**: http://46.28.111.31:3000/permanentka/{token}
 
@@ -436,7 +554,7 @@ kde:
 https://URL_RS.inrs.cz/rs/odkaz/permanentka/{idpermanekta}
 
 
-# Výpis dostupných členství
+# Výpis dostupných členství (GET)
 
 
 **Struktura**: http://46.28.111.31:3000/clenstvi/{token}
