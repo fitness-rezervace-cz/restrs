@@ -420,6 +420,110 @@ kde
 "pohlavi": M/Z - pohlaví uživatele\
 "kredit": Výše dobitého rkeditu uživatele
 
+
+# Uživatel podle Usernaem (GET)
+
+**Struktura**: http://46.28.111.31:3000/user/username/{token}/{username}
+
+token - unikátní vygenerovaný token  
+username - username uzivatele
+
+Vrací JSON:
+```json
+{
+  "ok": "1",
+  "data": {
+    "user": [
+      {
+        "idsys_member": 41,
+        "username": "....",
+        "firstname": "....",
+        "lastname": "...",
+        "email": "...",
+        "phone": "...",
+        "accesslevel": ".",
+        "blocked": "N",
+        "pohlavi": "M",
+        "kredit": ...
+      }
+    ],
+    
+    ]
+  }
+}
+```
+
+kde
+
+*user*
+
+"idsys_member": id uživatele\
+"username": uživatelské jméno\
+"firstname": křestní jméno\
+"lastname": přijmení\
+"email": email\
+"phone": telefonní číslo\
+"accesslevel": přistupový level. 1 - Admin, 2 - Obsluha, 3 - Uživatel, 4 - Obsluha, 5 - Účetní\
+"blocked": Y/N - jestli je uživatel v RS blokován\
+"pohlavi": M/Z - pohlaví uživatele\
+"kredit": Výše dobitého rkeditu uživatele
+
+
+
+# Vypis naposled registrovanych uzivatelu (GET)
+
+**Struktura**: http://46.28.111.31:3000/user/get_posledni_registrace/{token}/{pocet_dnu}
+
+token - unikátní vygenerovaný token  
+pocet_dnu - kolik dnu zpetne se ma kontrolovat posledni registrace
+
+Vrací JSON:
+```json
+{
+  "ok": "1",
+  "data": {
+    "user": [
+      {
+        "username": "",
+        "pohlavi": "M",
+        "firstname": "....",
+        "lastname": "....",
+        "email": "....",
+        "phone": "....",
+        "accesslevel": "....",
+        "blocked": "N",
+        "last_login": "....",
+        "kredit": 0,
+        "newsletter": "Y",
+        "platnost_kreditu_do": null,
+        "rodne_cislo": "....",
+        "adresa": "....",
+        "dt_registrace": "....",
+        "gdpr_souhlas": "...."
+      }
+    ],
+    
+    ]
+  }
+}
+```
+
+kde
+
+*user*
+
+"idsys_member": id uživatele\
+"username": uživatelské jméno\
+"firstname": křestní jméno\
+"lastname": přijmení\
+"email": email\
+"phone": telefonní číslo\
+"accesslevel": přistupový level. 1 - Admin, 2 - Obsluha, 3 - Uživatel, 4 - Obsluha, 5 - Účetní\
+"blocked": Y/N - jestli je uživatel v RS blokován\
+"pohlavi": M/Z - pohlaví uživatele\
+"kredit": Výše dobitého rkeditu uživatele
+
+
 # Vytvořit nového uživatele (POST)
 
 **Struktura**: http://46.28.111.31:3000/user/{token}
