@@ -427,16 +427,16 @@ kde
 token - unikátní vygenerovaný token 
 
 **POST data (x-www-form-urlencode)**
-username - uzivatelske jmené uzivatele, max 100 znaku, povinna položka
-pass_word - heslo uzivatele, povinna položka
-firstname - jméno uživatele, max 100 znaku, povinna položka
-lastname - přijmení uživatele, max 100 znaku, povinna položka
-email - email uživatele, povinna položka
-pohlavy - pohlavy uzivatele, povolene znaky Z, M), Z = zena, M = Muz
-dt_narozeni - datum narození, format YYYY-MM-DD
+username - uzivatelske jmené uzivatele, max 100 znaku, povinna položka\
+pass_word - heslo uzivatele, povinna položka\
+firstname - jméno uživatele, max 100 znaku, povinna položka\
+lastname - přijmení uživatele, max 100 znaku, povinna položka\
+email - email uživatele, povinna položka\
+pohlavy - pohlavy uzivatele, povolene znaky Z, M), Z = zena, M = Muz\
+dt_narozeni - datum narození, format YYYY-MM-DD\
 
-Vrací JSON:
-POkud probehne vse v poradku:
+Vrací JSON:\
+POkud probehne vse v poradku:\
 ```json
 {
   "ok": "1",
@@ -464,9 +464,9 @@ Pokud nastane chyba:
 token - unikátní vygenerovaný token 
 
 **POST data (x-www-form-urlencode)**
-kredit - vyse kreditu pro dobiti, pokud zadate zaporny kredit, uzivateli se kredit odecte. Povinna polozka
-idsys_member - id uzivatele, kteremu se dobiji kredit, povinna polozka
-dph - vzse dph, ktera se pouzije pro dobiti, pokud nejste platvi dph zadavejte 0 (nulu), povinna polozka
+kredit - vyse kreditu pro dobiti, pokud zadate zaporny kredit, uzivateli se kredit odecte. Povinna polozka\
+idsys_member - id uzivatele, kteremu se dobiji kredit, povinna polozka\
+dph - vzse dph, ktera se pouzije pro dobiti, pokud nejste platvi dph zadavejte 0 (nulu), povinna polozka\
 
 
 Vrací JSON:
