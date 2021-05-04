@@ -531,6 +531,7 @@ kde
 token - unikátní vygenerovaný token 
 
 **POST data (x-www-form-urlencode)**
+
 username - uzivatelske jmené uzivatele, max 100 znaku, povinna položka\
 pass_word - heslo uzivatele, povinna položka\
 firstname - jméno uživatele, max 100 znaku, povinna položka\
@@ -568,6 +569,7 @@ Pokud nastane chyba:
 token - unikátní vygenerovaný token 
 
 **POST data (x-www-form-urlencode)**
+
 kredit - vyse kreditu pro dobiti, pokud zadate zaporny kredit, uzivateli se kredit odecte. Povinna polozka\
 idsys_member - id uzivatele, kteremu se dobiji kredit, povinna polozka\
 dph - vzse dph, ktera se pouzije pro dobiti, pokud nejste platvi dph zadavejte 0 (nulu), povinna polozka\
