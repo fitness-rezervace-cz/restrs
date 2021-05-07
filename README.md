@@ -537,7 +537,7 @@ pass_word - heslo uzivatele, povinna položka\
 firstname - jméno uživatele, max 100 znaku, povinna položka\
 lastname - přijmení uživatele, max 100 znaku, povinna položka\
 email - email uživatele, povinna položka\
-pohlavy - pohlavy uzivatele, povolene znaky Z, M), Z = zena, M = Muz\
+pohlavi - pohlavi uzivatele, povolene znaky Z, M), Z = zena, M = Muz\
 dt_narozeni - datum narození, format YYYY-MM-DD\
 
 Vrací JSON:\
