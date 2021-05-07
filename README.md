@@ -85,16 +85,16 @@ HRS_NOT_PRINT
 - hodnota: hodiny oddělené čárkou. např.: 12,13  
 
 KALENDAR_START_DT 
-- případné datum, kdy by měl kalendář začínat. Pokud bude nastaveno, tak klient očekává, že kalendář začne v tomto datu, pokud bude datum větší jako aktuální den.   
-- hodnota: datum ve formatu dd.mm.YYYY.   
+- případné datum, kdy by měl kalendář začínat. Pokud bude nastaveno, tak klient očekává, že kalendář začne v tomto datu, pokud bude datum větší jako aktuální den
+- hodnota: datum ve formatu dd.mm.YYYY
 
 START_DEN_V_TYDNU   
-- kterým dnem má kalendář začínat.   
+- kterým dnem má kalendář začínat
 - hodnota: 1 - Po, 2 - Út, 3 - St, 4 - Čt, 5 - Pá, 6 - So, 7 - Ne  
 
 KALENDAR_START_DT_TRVALY  
 - trvale nastavený počáteční datum kalendáře  
-- hodnota: datum ve formátu dd.mm.YYYY.   
+- hodnota: datum ve formátu dd.mm.YYYY
 
 ##Lekce
 ```json
@@ -279,7 +279,7 @@ KALENDAR_START_DT_TRVALY
 **Struktura**: http://46.28.111.31:3000/user/barcode/{token}/{barcode}
 
 token - unikátní vygenerovaný token  
-barcode - carovy kod přiřaezný uživateli 
+barcode - čárový kód přiřazený uživateli 
 
 Vrací JSON:
 ```json
@@ -339,13 +339,13 @@ kde
 "idsys_member": id uživatele\
 "username": uživatelské jméno\
 "firstname": křestní jméno\
-"lastname": přijmení\
+"lastname": příjmení\
 "email": email\
 "phone": telefonní číslo\
-"accesslevel": přistupový level. 1 - Admin, 2 - Obsluha, 3 - Uživatel, 4 - Obsluha, 5 - Účetní\
+"accesslevel": přístupový level. 1 - Admin, 2 - Obsluha, 3 - Uživatel, 4 - Obsluha, 5 - Účetní\
 "blocked": Y/N - jestli je uživatel v RS blokován\
 "pohlavi": M/Z - pohlaví uživatele\
-"kredit": Výše dobitého rkeditu uživatele
+"kredit": výše dobitého kreditu uživatele
 
 
 *permanentky*
@@ -365,20 +365,20 @@ kde
 
 *clenstvi*
 
-"idclenstvi2user": id clenstvi\
+"idclenstvi2user": id členství\
 "idclenstvi": id použitého členství\
 "nazev": název členství\
 "platnost_od": platnost \ 
 "platnost_do": platnost \
-"pocet_rezervaci": po4et již proběhlích rezervací\
-"pocet_vstupu": počet již proběhlích vstupů \
+"pocet_rezervaci": počet již proběhlých rezervací\
+"pocet_vstupu": počet již proběhlých vstupů \
 
 # Uživatel podle ID (GET)
 
 **Struktura**: http://46.28.111.31:3000/user/id/{token}/{id}
 
 token - unikátní vygenerovaný token  
-id - id uzivatele
+id - id uživatele
 
 Vrací JSON:
 ```json
@@ -412,21 +412,21 @@ kde
 "idsys_member": id uživatele\
 "username": uživatelské jméno\
 "firstname": křestní jméno\
-"lastname": přijmení\
+"lastname": příjmení\
 "email": email\
 "phone": telefonní číslo\
-"accesslevel": přistupový level. 1 - Admin, 2 - Obsluha, 3 - Uživatel, 4 - Obsluha, 5 - Účetní\
+"accesslevel": přístupový level. 1 - Admin, 2 - Obsluha, 3 - Uživatel, 4 - Obsluha, 5 - Účetní\
 "blocked": Y/N - jestli je uživatel v RS blokován\
 "pohlavi": M/Z - pohlaví uživatele\
-"kredit": Výše dobitého rkeditu uživatele
+"kredit": výše dobitého kreditu uživatele
 
 
-# Uživatel podle Usernaem (GET)
+# Uživatel podle Username (GET)
 
 **Struktura**: http://46.28.111.31:3000/user/username/{token}/{username}
 
 token - unikátní vygenerovaný token  
-username - username uzivatele
+username - username uživatele
 
 Vrací JSON:
 ```json
@@ -460,22 +460,22 @@ kde
 "idsys_member": id uživatele\
 "username": uživatelské jméno\
 "firstname": křestní jméno\
-"lastname": přijmení\
+"lastname": příjmení\
 "email": email\
 "phone": telefonní číslo\
-"accesslevel": přistupový level. 1 - Admin, 2 - Obsluha, 3 - Uživatel, 4 - Obsluha, 5 - Účetní\
+"accesslevel": přístupový level. 1 - Admin, 2 - Obsluha, 3 - Uživatel, 4 - Obsluha, 5 - Účetní\
 "blocked": Y/N - jestli je uživatel v RS blokován\
 "pohlavi": M/Z - pohlaví uživatele\
-"kredit": Výše dobitého rkeditu uživatele
+"kredit": výše dobitého kreditu uživatele
 
 
 
-# Vypis naposled registrovanych uzivatelu (GET)
+# Výpis naposled registrovaných uživatelů (GET)
 
 **Struktura**: http://46.28.111.31:3000/user/get_posledni_registrace/{token}/{pocet_dnu}
 
 token - unikátní vygenerovaný token  
-pocet_dnu - kolik dnu zpetne se ma kontrolovat posledni registrace
+pocet_dnu - kolik dnů zpětně se má kontrolovat poslední registrace
 
 Vrací JSON:
 ```json
@@ -515,13 +515,13 @@ kde
 "idsys_member": id uživatele\
 "username": uživatelské jméno\
 "firstname": křestní jméno\
-"lastname": přijmení\
+"lastname": příjmení\
 "email": email\
 "phone": telefonní číslo\
-"accesslevel": přistupový level. 1 - Admin, 2 - Obsluha, 3 - Uživatel, 4 - Obsluha, 5 - Účetní\
+"accesslevel": přístupový level. 1 - Admin, 2 - Obsluha, 3 - Uživatel, 4 - Obsluha, 5 - Účetní\
 "blocked": Y/N - jestli je uživatel v RS blokován\
 "pohlavi": M/Z - pohlaví uživatele\
-"kredit": Výše dobitého rkeditu uživatele
+"kredit": výše dobitého kreditu uživatele
 
 
 # Vytvořit nového uživatele (POST)
@@ -532,16 +532,16 @@ token - unikátní vygenerovaný token
 
 **POST data (x-www-form-urlencode)**
 
-username - uzivatelske jmené uzivatele, max 100 znaku, povinna položka\
-pass_word - heslo uzivatele, povinna položka\
-firstname - jméno uživatele, max 100 znaku, povinna položka\
-lastname - přijmení uživatele, max 100 znaku, povinna položka\
-email - email uživatele, povinna položka\
-pohlavi - pohlavi uzivatele, povolene znaky Z, M), Z = zena, M = Muz\
-dt_narozeni - datum narození, format YYYY-MM-DD\
+username - uživatelské (přihlašovací) jméno uživatele, max 100 znaků, povinná položka\
+pass_word - heslo uživatele, povinná položka\
+firstname - jméno uživatele, max 100 znaků, povinná položka\
+lastname - příjmení uživatele, max 100 znaků, povinná položka\
+email - email uživatele, povinná položka\
+pohlavi - pohlaví uživatele, povolené znaky Z, M), Z = žena, M = muž\
+dt_narozeni - datum narození, formát YYYY-MM-DD\
 
 Vrací JSON:\
-POkud probehne vse v poradku:\
+Pokud proběhne vše v pořádku:\
 ```json
 {
   "ok": "1",
@@ -570,13 +570,13 @@ token - unikátní vygenerovaný token
 
 **POST data (x-www-form-urlencode)**
 
-kredit - vyse kreditu pro dobiti, pokud zadate zaporny kredit, uzivateli se kredit odecte. Povinna polozka\
-idsys_member - id uzivatele, kteremu se dobiji kredit, povinna polozka\
-dph - vzse dph, ktera se pouzije pro dobiti, pokud nejste platvi dph zadavejte 0 (nulu), povinna polozka\
+kredit - výše kreditu pro dobití, pokud zadáte záporný kredit, uživateli se kredit odečte. Povinná položka\
+idsys_member - id uživatele, kterému se dobijí kredit, povinná položka\
+dph - výše DPH, která se použije pro dobití, pokud nejste plátci DPH zadávejte 0 (nulu), povinná položka\
 
 
 Vrací JSON:
-POkud probehne vse v poradku:
+Pokud proběhne vše v pořádku:
 ```json
 {
   "ok": "1",
@@ -604,7 +604,7 @@ Pokud nastane chyba:
 
 token - unikátní vygenerovaný token  
 
-vrací JOSN:
+vrací JSON:
 ```json
 {
   "ok": "1",
@@ -637,25 +637,25 @@ vrací JOSN:
 kde:
 
 "idpermanekta": - id permanentky\
-"nazev": nazev permanentky\
-"volnych_vstupu_perioda": pocet vstupu za interval\
-"perioda": Interval vstupu\
+"nazev": název permanentky\
+"volnych_vstupu_perioda": počet vstupů za interval\
+"perioda": interval vstupu\
 "platnost_dnu": počet dnů platnosti\
 "celkovy_pocet_rezervaci": celkový počet dostupných rezervací\
-"text_pocet_vstupu": text pro celkový počet vstupu\
-"fond_na_lekci": omezení počtu rezervaci na permanentku na jednu lekci,\
+"text_pocet_vstupu": text pro celkový počet vstupů\
+"fond_na_lekci": omezení počtu rezervací na permanentku na jednu lekci,\
 "cena": základní cena permanentky\
-"cena1": cena permanentky pro slevu číslo 1 (viz. RS Nastaveni - Slevy (student, senior,...)\
-"cena2": cena permanentky pro slevu číslo 2 (viz. RS Nastaveni - Slevy (student, senior,...)\
-"cena3": cena permanentky pro slevu číslo 3 (viz. RS Nastaveni - Slevy (student, senior,...)\
-"cena4": cena permanentky pro slevu číslo 4 (viz. RS Nastaveni - Slevy (student, senior,...)\
-"automaticky_po_prihlaseni": 0/1 - jestli bude permanentka p5id2lena automatickz po registraci\
-"automaticky_po_prihlaseni_zaplaceno": 0/1 - jestli bude automaticky přidělená permanentka nastavena na zaplaceno \
-"platnost_od": jestli bude mít natvrdo nastavený datum od kdy bude permanentka platna\
-"pocet_dostupnych": jestli je omezený počet prodaných permanentek \
-"automaticke_odecitani_karta": jestli bude permanentka nastavena na autoamticke odečítání vstupu po pípnutí karty do RS
+"cena1": cena permanentky pro slevu číslo 1 (viz. RS Nastavení - Slevy (student, senior,...)\
+"cena2": cena permanentky pro slevu číslo 2 (viz. RS Nastavení - Slevy (student, senior,...)\
+"cena3": cena permanentky pro slevu číslo 3 (viz. RS Nastavení - Slevy (student, senior,...)\
+"cena4": cena permanentky pro slevu číslo 4 (viz. RS Nastavení - Slevy (student, senior,...)\
+"automaticky_po_prihlaseni": 0/1 - jestli bude permanentka přidělena automaticky po registraci\
+"automaticky_po_prihlaseni_zaplaceno": 0/1 - jestli bude automaticky přidělená permanentka nastavená na zaplaceno\
+"platnost_od": jestli bude mít natvrdo nastavený datum od kdy bude permanentka platná\
+"pocet_dostupnych": jestli je k prodeji omezený počet permanentek\
+"automaticke_odecitani_karta": jestli bude permanentka nastavena na automatické odečítání vstupu po pípnutí karty do RS
 
-*link pro presmerovaní na koupi permanentky v RS*
+*link pro přesměrování na koupi permanentky v RS*
 
 https://URL_RS.inrs.cz/rs/odkaz/permanentka/{idpermanekta}
 
@@ -667,7 +667,7 @@ https://URL_RS.inrs.cz/rs/odkaz/permanentka/{idpermanekta}
 
 token - unikátní vygenerovaný token  
 
-vrací JOSN:
+vrací JSON:
 ```json
 {
   "ok": "1",
@@ -691,18 +691,18 @@ vrací JOSN:
 
 kde:
 
-"nazev": nazev členství\
+"nazev": název členství\
 "pocet_dnu_platnosti": počet dnů pro platnost členství\
 "cena": základní cena členství\
-"cena1": cena permanentky pro slevu číslo 1 (viz. RS Nastaveni - Slevy (student, senior,...)\
-"cena2": cena permanentky pro slevu číslo 2 (viz. RS Nastaveni - Slevy (student, senior,...)\
-"cena3": cena permanentky pro slevu číslo 3 (viz. RS Nastaveni - Slevy (student, senior,...)\
-"cena4": cena permanentky pro slevu číslo 4 (viz. RS Nastaveni - Slevy (student, senior,...)\
+"cena1": cena permanentky pro slevu číslo 1 (viz. RS Nastavení - Slevy (student, senior,...)\
+"cena2": cena permanentky pro slevu číslo 2 (viz. RS Nastavení - Slevy (student, senior,...)\
+"cena3": cena permanentky pro slevu číslo 3 (viz. RS Nastavení - Slevy (student, senior,...)\
+"cena4": cena permanentky pro slevu číslo 4 (viz. RS Nastavení - Slevy (student, senior,...)\
 "pocet_dostupnych": počet dostupných členství\
-"pocet_video": případný počet videii, které bude zpřístupněno přes členství\
+"pocet_video": případný počet videí, která budou zpřístupněna přes členství\
 "cena_prodlouzeni_procenta": cena za prodloužení již zakoupeného členství
 
-*link pro presmerovaní na koupi permanentky v RS*
+*link pro přesměrovaní na koupi permanentky v RS*
 
 https://URL_RS.inrs.cz/rs/odkaz/clenstvi/{idclenstvi}
 
