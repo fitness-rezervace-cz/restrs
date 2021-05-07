@@ -375,7 +375,7 @@ kde
 
 # Uživatel podle ID (GET)
 
-**Struktura**: http://46.28.111.31:3000/user/barcode/{token}/{id}
+**Struktura**: http://46.28.111.31:3000/user/id/{token}/{id}
 
 token - unikátní vygenerovaný token  
 id - id uzivatele
